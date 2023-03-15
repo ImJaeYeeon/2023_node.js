@@ -25,7 +25,7 @@
 // result = sub(3,2);
 // console.log(result); //1
 
-square = (num) => {
+square = num => {
   return num*num;
 }
 let result = square(3);
