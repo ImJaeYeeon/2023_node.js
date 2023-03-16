@@ -9,3 +9,7 @@ function cb(){
   console.log("콜백함수 실행");
 }
 somefunc(cb);
+
+somefunc(function(){
+  console.log("콜백함수 설행");
+});
