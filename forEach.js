@@ -8,3 +8,8 @@ for(let i = 0; i< fruits.length; i++){
 fruits.forEach(function(f){
   console.log(f);
 });
+
+//for of문
+for(const f of fruits){
+  console.log(f);
+}
