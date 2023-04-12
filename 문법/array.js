@@ -5,4 +5,11 @@ arr.forEach(function(data,index){
 });
 
 const cherryIndex = arr.findIndex(data => data === 'cherry')
-console.log(cherryIndex);
+//console.log(cherryIndex);
+
+arr.push('grape');
+console.log(arr);
+
+const x = arr.pop();
+console.log(x);
+console.log(arr);
