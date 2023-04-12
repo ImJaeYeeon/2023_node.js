@@ -7,6 +7,9 @@ arr.forEach(function(data,index){
 const cherryIndex = arr.findIndex(data => data === 'cherry')
 //console.log(cherryIndex);
 
+const a = arr.indexOf('cherry',3);
+console.log(a);
+
 arr.push('grape');
 console.log(arr);
 
