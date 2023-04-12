@@ -4,7 +4,5 @@ arr.forEach(function(data,index){
   //console.log(`${index}:${data}`);
 });
 
-const cherryIndex = arr.findIndex(function(data){
-  return data === 'cherry';
-})
+const cherryIndex = arr.findIndex(data => data === 'cherry')
 console.log(cherryIndex);
