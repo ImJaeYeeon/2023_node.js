@@ -1,0 +1,15 @@
+{
+  "name": "2023node",
+  "version": "1.0.0",
+  "description": "2023노드",
+  "main": "./grace/template.js",
+  "scripts": {
+    "start": "node ./grace/template.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
