@@ -26,7 +26,7 @@ const server = http.createServer(function(req, res){
   } else if(req.url === '/food'){
     fs.createReadStream(path.join(__dirname, 'html', 'food.html')).pipe(res);
   } else{
-    fs.createReadStream(path.join(__dirname, 'html', '404.html')).pipe(res);
+    fs.createReadStream(path.join(__dirname, 'html', '404.html')).pipe(res);  
   }
 
 });

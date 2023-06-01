@@ -1,20 +1,19 @@
-const { dir } = require('console');
-const fs = require('fs');
-const path = require('path');
+const express = require('express');
 
-//dirPath에 있는 모든 파일목록의 배열(하위경로까지)
-function getAllFiles(dirPath, arrOfFiles) {
-    //dirPath에 있는 모든 파일목록의 배열(하위 경로는 불가)
-    const files = fs.readdirSync(dirPath);
+const app = express();
+//모든 경로에 요청
+app.get('*',function(req,res,next){
+    console.log('....');
+    next();
+})
 
-    files.forEach(function(file) {
-      const destPath = dirPath+"\\"+file;
-        if(fs.statSync(dirPath + "\\" + file).isDirectory()) {
-            console.log(dirPath + "\\" + file + "는 디렉토리(폴더)입니다.");
-        }else {
-            console.log(dirPath + "\\" + file + "는 파일입니다.");
-        }
-    });
-}
+app.get('/', function(req, res, next) {
+  console.log('Hello World');
+  next();
+});
 
-const files = getAllFiles(__dirname + "\\base", []);
+app.get('/test',function(req,res,next){
+    console.log('path',req.path);
+});
+
+app.listen(3333);
