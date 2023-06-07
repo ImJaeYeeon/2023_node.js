@@ -9,7 +9,7 @@ fruits.forEach(function (f){
 //2. 'grape'를 배열의 맨 끝에 추가하세요
 fruits.push('grape');
 //3. 배열의 맨 끝 요소를 제거하고 제거된 요소를 출력하세요.
-const a = fruits.pop;
+const a = fruits.pop();
 console.log(a);
 //4. 다음 한수를 arrow function형태로 변형하시오
 sub = function(n1,n2){
@@ -22,7 +22,7 @@ sub = (n1,n2) => {
 //3)
 sub = (n1,n2) => n1+n2;
 //6
-0 === false //true
+0 === false //false
 //7. 메모리, 파일 시스템, 프로세스, 네트워크 인터페이스 등 과 같은 운영 체제의 기본 리소스와 상호 작용하는 방법을 제공
 require('os');
 
